@@ -9,7 +9,7 @@ import Home from "../src/containers/home"
 import News from "../src/containers/news"
 import Me from "../src/containers/me"
 import Notifications from "../src/containers/notifications"
-import LoginModal from "./containers/login"
+import Intro from "./containers/intro"
 import CameraScreen from "../src/components/camera"
 
 const defaultNavigationOptions = ({ navigation }) => ({
@@ -73,13 +73,7 @@ const RootStack = createStackNavigator(
       screen: MainStack,
     },
     Intro: {
-      screen: LoginModal,
-    },
-    Login: {
-      screen: LoginModal,
-    },
-    Register: {
-      screen: LoginModal,
+      screen: Intro,
     },
     Camera: {
       screen: CameraScreen,

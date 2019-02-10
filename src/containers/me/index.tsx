@@ -3,7 +3,7 @@ import HomeScreen from "./screen"
 
 const HomeStack = createStackNavigator(
   {
-    Intro: {
+    List: {
       screen: HomeScreen,
       navigationOptions: {
         header: null,
@@ -23,7 +23,7 @@ const HomeStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: "Intro",
+    initialRouteName: "List",
     // transitionConfig: () => ({
     //   screenInterpolator: (sceneProps) => {
     //     const transition = StackViewStyleInterpolator.forHorizontal(sceneProps);

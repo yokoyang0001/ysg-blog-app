@@ -1,20 +1,9 @@
 import React from "react"
-import {
-  StyleSheet,
-  Text,
-  View,
-  Dimensions,
-  TouchableHighlight,
-  Image,
-} from "react-native"
+import { StyleSheet, Text, View, Dimensions, Image } from "react-native"
 import { Button } from "react-native-elements"
 import Swiper from "react-native-swiper"
 import i18n from "../../../lib/i18n"
-import INTRO_1 from "../../../../assets/image/intro_1.png"
-import INTRO_2 from "../../../../assets/image/intro_2.png"
-import INTRO_3 from "../../../../assets/image/intro_3.png"
-import INTRO_4 from "../../../../assets/image/intro_4.png"
-import INTRO_5 from "../../../../assets/image/intro_5.png"
+import ImageAssets from "../../../lib/image"
 
 interface Props {
   navigation: any
@@ -27,23 +16,23 @@ const SCREEN_HEIGHT = Dimensions.get("window").height
 const SWIPE_ITEMS = [
   {
     description: i18n.t("intro1"),
-    image: INTRO_1,
+    image: ImageAssets.INTRO_1,
   },
   {
     description: i18n.t("intro2"),
-    image: INTRO_2,
+    image: ImageAssets.INTRO_2,
   },
   {
     description: i18n.t("intro3"),
-    image: INTRO_3,
+    image: ImageAssets.INTRO_3,
   },
   {
     description: i18n.t("intro4"),
-    image: INTRO_4,
+    image: ImageAssets.INTRO_4,
   },
   {
     description: i18n.t("intro5"),
-    image: INTRO_5,
+    image: ImageAssets.INTRO_5,
   },
 ]
 

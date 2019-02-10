@@ -3,7 +3,7 @@ import HomeScreen from "./screen"
 
 const HomeStack = createStackNavigator(
   {
-    Home: {
+    Notification: {
       screen: HomeScreen,
       navigationOptions: {
         header: null,
@@ -11,7 +11,7 @@ const HomeStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Notification",
     // transitionConfig: () => ({
     //   screenInterpolator: (sceneProps) => {
     //     const transition = StackViewStyleInterpolator.forHorizontal(sceneProps);

@@ -1,9 +1,9 @@
-import { createStackNavigator } from "react-navigation"
-import IntroScreen from "./screen/intro"
-import LoginScreen from "./screen/login"
-import RegisterScreen from "./screen/register"
+import { createStackNavigator } from 'react-navigation'
+import IntroScreen from './screen/intro'
+import LoginScreen from './screen/login'
+import RegisterScreen from './screen/register'
 
-const HomeStack = createStackNavigator(
+const homeStack = createStackNavigator(
   {
     Intro: {
       screen: IntroScreen,
@@ -19,7 +19,7 @@ const HomeStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: "Intro",
+    initialRouteName: 'Intro',
     // transitionConfig: () => ({
     //   screenInterpolator: (sceneProps) => {
     //     const transition = StackViewStyleInterpolator.forHorizontal(sceneProps);
@@ -29,4 +29,4 @@ const HomeStack = createStackNavigator(
   }
 )
 
-export default HomeStack
+export default homeStack

@@ -1,9 +1,9 @@
-import { createStackNavigator } from "react-navigation"
-import HomeScreen from "./screen"
+import { createStackNavigator } from 'react-navigation'
+import HomeScreen from './screen'
 
-const HomeStack = createStackNavigator(
+const homeStack = createStackNavigator(
   {
-    Home: {
+    MyPage: {
       screen: HomeScreen,
       navigationOptions: {
         header: null,
@@ -11,7 +11,7 @@ const HomeStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: 'MyPage',
     // transitionConfig: () => ({
     //   screenInterpolator: (sceneProps) => {
     //     const transition = StackViewStyleInterpolator.forHorizontal(sceneProps);
@@ -21,4 +21,4 @@ const HomeStack = createStackNavigator(
   }
 )
 
-export default HomeStack
+export default homeStack

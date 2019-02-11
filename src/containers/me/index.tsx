@@ -1,7 +1,7 @@
-import { createStackNavigator } from "react-navigation"
-import HomeScreen from "./screen"
+import { createStackNavigator } from 'react-navigation'
+import HomeScreen from './screen'
 
-const HomeStack = createStackNavigator(
+const homeStack = createStackNavigator(
   {
     List: {
       screen: HomeScreen,
@@ -23,7 +23,7 @@ const HomeStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: "List",
+    initialRouteName: 'List',
     // transitionConfig: () => ({
     //   screenInterpolator: (sceneProps) => {
     //     const transition = StackViewStyleInterpolator.forHorizontal(sceneProps);
@@ -33,4 +33,4 @@ const HomeStack = createStackNavigator(
   }
 )
 
-export default HomeStack
+export default homeStack

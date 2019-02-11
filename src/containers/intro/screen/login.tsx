@@ -16,6 +16,7 @@ export default class App extends React.Component<Props, State> {
   private onPressLogin = (): void => {
     this.props.navigation.navigate('Home')
   }
+
   public render() {
     return (
       <View style={styles.container}>
